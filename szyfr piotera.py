@@ -9,6 +9,6 @@ for x in słowo:
     elif poz % 3 == 0:
         output += kod[poz + 1]
     else:
-        output = kod[poz - 1]
+        output += kod[poz - 1]
 
 print(output)
