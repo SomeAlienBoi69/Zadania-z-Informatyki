@@ -12,7 +12,7 @@ def odszyfrowanie(słowo, klucz):
     klucz = klucz % 26
     w = ""
     for litera in słowo:
-        poz = ord(litera) + klucz
+        poz = ord(litera) - klucz
         if poz < 65:
             poz = poz + 26
         w = w + chr(poz)
