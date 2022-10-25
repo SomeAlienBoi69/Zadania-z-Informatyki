@@ -22,5 +22,8 @@ def odszyfrowanie(słowo, klucz):
 słowo = input().upper()
 klucz = int(input())
 
-print(szyfrowanie(słowo, klucz))
-print(odszyfrowanie(słowo, klucz))
+zaszyf = szyfrowanie(słowo, klucz)
+odszyf = odszyfrowanie(zaszyf, klucz)
+
+print(zaszyf)
+print(odszyf)
